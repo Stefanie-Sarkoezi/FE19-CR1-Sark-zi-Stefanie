@@ -65,7 +65,7 @@ body .navbar2 a {
 }
 body .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 25% 25% 25%;
   grid-auto-rows: minmax(25%, 30%);
   gap: 20px;
   margin: 2.5% 10% 0% 25%;
