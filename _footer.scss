@@ -1,0 +1,54 @@
+.container-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: normal;
+    background-color: black;
+    
+    
+
+    .row1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1vh 30vw 1vh 30vw;
+        
+        
+        a {
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .row2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        padding: 0vh 1vw 0vh 1vw;
+
+        img {
+            height: 1vw;
+        }
+    }
+
+    .row3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 1vw 1vh 1vw;
+     
+        #copy {
+            text-transform: none;
+            color: white;
+        }
+    }
+
+       
+
+        
+}
