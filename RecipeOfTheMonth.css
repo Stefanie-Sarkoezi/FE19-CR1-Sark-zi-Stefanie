@@ -104,8 +104,8 @@ body .bar p {
 }
 body #grid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 5%;
   margin: 3% 1% 3% 2%;
 }
@@ -113,6 +113,7 @@ body #grid section {
   font-family: "brevia", sans-serif;
   font-weight: 400;
   font-style: normal;
+  grid-column: 1/3;
 }
 body #grid section h3 {
   font-family: "brevia", sans-serif;
@@ -127,6 +128,8 @@ body #grid aside {
   background-color: rgb(240, 195, 158);
   position: relative;
   border-radius: 20px;
+  grid-column: 3/3;
+  grid-row: 1/1;
 }
 body #grid aside #sidebar {
   position: absolute;
@@ -194,8 +197,17 @@ body .container-footer .row3 #copy {
   font-size: 1.3vw;
 }
 
-@media screen and (width <= 480px) {
-  aside {
+@media screen and (width <= 48px) {
+  body #grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, fr);
+  }
+  body #grid section {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  body #grid aside {
+    grid-column: 1/1;
     grid-row: 2/2;
   }
 }/*# sourceMappingURL=RecipeOfTheMonth.css.map */

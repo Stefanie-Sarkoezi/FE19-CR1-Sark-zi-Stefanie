@@ -134,7 +134,7 @@
     @import "footer";
  }
 
-    @media screen and (width < 650px) {
+    @media screen and (width <= 480px) {
         body{
             #grid{
                 grid-template-columns:repeat(1,1fr);
