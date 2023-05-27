@@ -122,7 +122,7 @@
     @import "footer";
  }
 
- @media screen and (width < 650px) {
+ @media screen and (width <= 480px) {
     aside {
         grid-row: 2/2;
     }

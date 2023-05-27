@@ -38,10 +38,6 @@
             font-weight: 400;
             font-style: normal;
 
-        
-            
-
-
         }
     }
 
@@ -63,8 +59,8 @@
 
     #grid {
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-auto-rows: minmax(50%, 100%);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
         gap: 5%;
         margin: 3% 1% 3% 2%;
 
@@ -72,6 +68,7 @@
             font-family: "brevia", sans-serif;
             font-weight: 400;
             font-style: normal;
+            grid-column: 1/3;
 
             h3 {
                 font-family: "brevia", sans-serif;
@@ -86,7 +83,9 @@
             }
         }
         
-        aside {
+        aside { 
+            grid-column: 3/3;
+            grid-row: 1/1;
             background-color: rgb(240, 195, 158);
             position: relative;
             border-radius: 20px;
@@ -106,18 +105,24 @@
                     font-weight: 800;
                     font-style: normal;
                     font-size: 1.4vw;
-                    text-transform: uppercase; 
+                    text-transform: uppercase;
+                }               
+                
+                p {
+                    font-size: 1vw;
                 }
+
                 button {
                     background-color: bisque;
+                    height: auto;
+                    width: auto;
                     border-radius: 10px;
                     padding: 3%;
                     text-transform: uppercase;
                     border: 1px solid rgb(53, 24, 10);
                     font-family: "brevia", sans-serif;
                     box-shadow: 1px 1px 5px rgb(68, 53, 46);
-                    text-align: center
-                    
+                    text-align: center;   
                 }
 
 
@@ -129,11 +134,24 @@
     @import "footer";
  }
 
- @media screen and (width < 650px) {
-    aside {
-        grid-row: 2/2;
+    @media screen and (width < 650px) {
+        body{
+            #grid{
+                grid-template-columns:repeat(1,1fr);
+                grid-template-columns:repeat(2,fr);
+                section{
+                    grid-column: 1/1;
+                    grid-row: 1/1;
+                }
+                aside {
+                    grid-column: 1/1;
+                    grid-row: 2/2;
+                }
+            }
+        }
     }
- }
+    
+    
  
     
  
