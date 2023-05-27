@@ -167,6 +167,8 @@ body .container-footer {
   flex-flow: column nowrap;
   align-items: normal;
   background-color: black;
+  margin-top: 10vh;
+  padding-top: 10px;
 }
 body .container-footer .row1 {
   display: flex;
