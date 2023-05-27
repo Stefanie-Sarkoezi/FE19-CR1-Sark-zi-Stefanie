@@ -80,7 +80,7 @@ body .container div p {
   height: 20%;
   position: absolute;
   text-align: center;
-  padding: 5% 0;
+  padding: 5%;
   bottom: 0%;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.4);
@@ -139,7 +139,7 @@ body .container-footer .row3 #copy {
   font-size: 1.3vw;
 }
 
-@media screen and (width < 650px) {
+@media screen and (max-width: 650px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
@@ -148,6 +148,6 @@ body .container-footer .row3 #copy {
 @media screen and (width < 1150px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 }/*# sourceMappingURL=index.css.map */
